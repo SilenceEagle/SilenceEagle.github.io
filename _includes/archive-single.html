@@ -41,7 +41,24 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
+          {% if post.authors %}
+          <p>Authors: {{ post.authors }}</p>
+          {% endif %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'patents' %}
+          {% if post.authors %}
+          <p>发明人: {{ post.authors }}</p>
+          {% endif %}
+          {% if post.number %}
+          <p>申请(专利)号: {{ post.number }}</p>
+          {% endif %}
+          {% if post.applicationDate %}
+          <p>申请时间: {{ post.applicationDate }}</p>
+          {% endif %}
+          {% if post.issueDate %}
+          <p>授权时间: {{ post.issueDate }}</p>
+          {% endif %}
+        
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}

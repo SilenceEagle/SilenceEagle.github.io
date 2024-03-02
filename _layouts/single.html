@@ -36,6 +36,21 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'patents' %}
+          {% if page.authors %}
+          <p>发明人: {{ page.authors }}</p>
+          {% endif %}
+          {% if page.number %}
+          <p>申请(专利)号: {{ page.number }}</p>
+          {% endif %}
+          {% if page.applicationDate %}
+          <p>申请时间: {{ page.applicationDate }}</p>
+          {% endif %}
+          {% if page.issueDate %}
+          <p>授权时间: {{ page.issueDate }}</p>
+          {% endif %}
+        {% elsif page.authors %}
+          <p>Authors: {{ page.authors }}</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
