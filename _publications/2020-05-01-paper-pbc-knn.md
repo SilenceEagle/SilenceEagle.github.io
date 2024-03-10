@@ -1,6 +1,6 @@
 ---
 title: "A new incomplete pattern belief classification method with multiple estimations based on KNN"
-authors: Zong-fang Ma, Hong-peng Tian, <b>Ze-chao Liu</b>, Zuo-wei Zhang *.
+authors: Zong-fang Ma, Hong-peng Tian, <b>Ze-chao Liu</b>, Zuo-wei Zhang*.
 collection: publications
 permalink: /publication/2020-05-01-paper-pbc-knn
 excerpt: 'A new incomplete pattern belief classification (PBC) method with multiple estimations based on 
@@ -8,7 +8,6 @@ excerpt: 'A new incomplete pattern belief classification (PBC) method with multi
 date: 2020-05-01
 venue: 'Applied Soft Computing'
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S1568494620301150?via%3Dihub'
-citation: 'Ma, Zong-fang, et al. "A new incomplete pattern belief classification method with multiple estimations based on KNN." <i>Applied Soft Computing</i> 90 (2020): 106175.'
+citation: 'Ma, Zong-fang, Tian Hong-peng, Liu, Ze-chao, et al. "A new incomplete pattern belief classification method with multiple estimations based on KNN." <i>Applied Soft Computing</i> 90 (2020): 106175.'
 ---
-
 The classification of missing data is a challenging task, because the lack of pattern attributes may bring uncertainty to the [classification results](https://www.sciencedirect.com/topics/computer-science/classification-result "Learn more about classification results from ScienceDirect's AI-generated Topic Pages") and most classification methods produce only one estimation, which may have a risk of [misclassification](https://www.sciencedirect.com/topics/engineering/misclassification "Learn more about misclassification from ScienceDirect's AI-generated Topic Pages"). A new incomplete pattern belief classification (PBC) method with multiple estimations based on �-nearest neighbors (KNNs) is proposed to deal with missing data. PBC preliminarily classifies the incomplete pattern using its KNNs obtained by the known attributes. The pattern whose KNNs contain only one class information can be directly divided into this class. If not, the � (�≤�) estimations will be computed according to the different KNNs in different classes when � classes are included in the KNNs of the pattern and it will yield � pieces of [classification results](https://www.sciencedirect.com/topics/computer-science/classification-result "Learn more about classification results from ScienceDirect's AI-generated Topic Pages") by the chosen [classifier](https://www.sciencedirect.com/topics/computer-science/classifier "Learn more about classifier from ScienceDirect's AI-generated Topic Pages"). Then, a weighted possibility distance method is used to further divide the � classification results with their KNNs’ classification information. The pattern with similar possibility distances in different classes will be reasonably classified into a proper meta-class under the framework of belief functions theory, which truly reflects the uncertainty of the pattern caused by missing values and effectively reduces the error rate. Experiments on both artificial and [real data sets](https://www.sciencedirect.com/topics/computer-science/real-data-sets "Learn more about real data sets from ScienceDirect's AI-generated Topic Pages") show that PBC is effective for dealing with missing data.

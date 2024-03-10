@@ -1,6 +1,6 @@
 ---
 title: "一种光纤传感行人识别方法、装置和存储介质"
-authors: "彭威;<b>刘泽超</b>;马玲梅;王皓;程徐"
+authors: "彭威;<b>刘泽超</b>;马玲梅;王皓;程徐."
 collection: patents
 permalink: /patents/2023-04-10-patents-ofs-recognition
 applicationDate: 2023-04-10

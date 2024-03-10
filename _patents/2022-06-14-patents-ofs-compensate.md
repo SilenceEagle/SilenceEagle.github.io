@@ -1,6 +1,6 @@
 ---
 title: "一种两段式光纤传感水声信号补偿方法和装置"
-authors: "彭威;<b>刘泽超</b>;王皓;马玲梅;饶云江"
+authors: "彭威;<b>刘泽超</b>;王皓;马玲梅;饶云江."
 collection: patents
 permalink: /patents/2022-06-14-patents-ofs-compensate
 applicationDate: 2022-06-14

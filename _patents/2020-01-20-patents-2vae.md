@@ -1,6 +1,6 @@
 ---
 title: "基于分层变分自编码的跨源舰船特征融合学习与识别方法"
-authors: "文载道;<b>刘泽超</b>;刘准钆;潘泉"
+authors: "文载道;<b>刘泽超</b>;刘准钆;潘泉."
 collection: patents
 permalink: /patents/2020-01-20-patents-2vae
 applicationDate: 2020-01-20

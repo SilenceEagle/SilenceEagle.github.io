@@ -1,6 +1,6 @@
 ---
 title: "一种基于参考传感器的分布式声波传感降噪系统及方法"
-authors: "马玲梅;应马可;胡威旺;<b>刘泽超</b>;王皓;饶云江"
+authors: "马玲梅;应马可;胡威旺;<b>刘泽超</b>;王皓;饶云江."
 collection: patents
 permalink: /patents/2021-08-23-patents-ofs-deepclean
 applicationDate: 2021-08-23

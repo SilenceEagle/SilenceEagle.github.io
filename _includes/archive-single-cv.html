@@ -37,6 +37,17 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
+    {% if post.collection == 'patents' %}
+      {% capture description %}
+        {{ post.authors | append: post.number}}
+      {% endcapture %}
+      {% if post.issueDate %}
+        {% capture description %}
+          {{ description | append: "(<b>已授权</b>)" }}
+        {% endcapture %}
+      {% endif %}
+      <p class="archive__item-excerpt" itemprop="description">{{ description }}</p>
+    {% endif %}  
+  </li>
  </article>
 </div>

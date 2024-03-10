@@ -1,6 +1,6 @@
 ---
 title: "基于畸变点检测的光纤传感信号相位错误修正方法和装置"
-authors: "<b>刘泽超</b>;李彩云;马玲梅;胡威旺;彭威;王皓"
+authors: "<b>刘泽超</b>;李彩云;马玲梅;胡威旺;彭威;王皓."
 collection: patents
 permalink: /patents/2023-02-22-patents-adjusted-unwrap
 applicationDate: 2023-02-22

@@ -1,6 +1,6 @@
 ---
 title: "一种基于深度学习的光纤传感水声信号识别方法及装置"
-authors: "高嘉豪;彭威;<b>刘泽超</b>;王皓;马玲梅;饶云江;叶松涛"
+authors: "高嘉豪;彭威;<b>刘泽超</b>;王皓;马玲梅;饶云江;叶松涛."
 collection: patents
 permalink: /patents/2022-07-01-patents-ofs-recognition
 applicationDate: 2022-07-01

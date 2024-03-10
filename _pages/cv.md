@@ -43,12 +43,21 @@ redirect_from:
   * **Photoshop**：简单操作。 
 
 
-Publications
+论文
 ============
-
-<ul>{% for post in site.publications reversed %}
+<!-- {% assign count = 0 %} -->
+<ol>{% for post in site.publications reversed %}
+    <!-- {% capture count %}{{ count | plus:1 }}{% endcapture %} -->
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ol>
+
+专利
+============
+<!-- {% assign count = 0 %} -->
+<ol>{% for post in site.patents reversed %}
+    <!-- {% capture count %}{{ count | plus:1 }}{% endcapture %} -->
+    {% include archive-single-cv.html %}
+  {% endfor %}</ol>
 
 <!-- Talks
 =====
