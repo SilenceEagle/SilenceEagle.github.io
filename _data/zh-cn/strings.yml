@@ -1,0 +1,143 @@
+archive_category: 属于该类别的文章
+archive_tag: 属于该标签的文章
+archive_year: 这一年的文章
+blog:
+  navigation_title: 博客
+categories:
+  fun: 业余生活
+  work: 工作
+citation:
+  bibtex: "或者采用BibTex引用格式："
+  introduction: "如果您认为此信息有用，请添加引用："
+contact_note: 你甚至可以添加一条小注释，说明哪种方式是联系您的最佳方式。
+cv:
+  address: 地址
+  area: 地区
+  awarder: 颁奖者
+  awards: 奖项
+  basics: 通用信息
+  certificates: 证书
+  city: 城市
+  countryCode: 国家代码
+  courses: 课程
+  date: 日期
+  education: 教育
+  email: 电子邮箱
+  endDate: 终止时间
+  fluency: 流利度
+  highlights: 高亮
+  image: 图片
+  institution: 机构
+  interests: 兴趣
+  issuer: 发行者
+  keywords: 关键词
+  label: 标签
+  language: 语言
+  languages: 语言
+  level: 水平
+  location: 位置
+  name: 姓名
+  network: 网络
+  organization: 组织
+  phone: 电话
+  position: 职位
+  postalCode: 邮编
+  profiles: 档案
+  projects: 项目
+  publications: 刊物
+  publisher: 出版商
+  reference: 参考文献
+  references: 参考文献
+  region: 地区
+  releaseDate: 发布日期
+  score: 分数
+  skills: 技能
+  startDate: 开始日期
+  studyType: 学习类型
+  summary: 总结
+  table_of_contents: Tópicos目录
+  title: 标题
+  url: 网址
+  username: 用户名
+  volunteer: 志愿者
+  work: 工作
+footer_text: > # the ">" symbol means to ignore newlines until "titles:"
+  改编自基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 的 <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>主题.
+  部署于<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+latest_posts: 最新文章
+months:
+  long:
+    january: 一月
+    february: 二月
+    march: 三月
+    april: 四月
+    may: 五月
+    june: 六月
+    july: 七月
+    august: 八月
+    september: 九月
+    october: 十月
+    november: 十一月
+    december: 十二月
+  short:
+    january: 一月
+    february: 二月
+    march: 三月
+    april: 四月
+    may: 五月
+    june: 六月
+    july: 七月
+    august: 八月
+    september: 九月
+    october: 十月
+    november: 十一月
+    december: 十二月
+news: 新闻
+newsletter:
+  back: 背面
+  error: "哎呀！出错了，请重试。"
+  subscribe: 订阅
+  subscribed: "您已成功订阅新闻。"
+  subscribe_to_receive: "订阅以获取未来文章的通知："
+  too_many_signups: "注册人数过多，请稍后重试"
+  wait: "请稍侯。。。"
+no_news: 暂时没有新闻。。。
+pagination:
+  newer: 较新的
+  older: 较旧的
+  page: 页面
+post:
+  created_in: 创建于
+  created_by: 创建自
+  last_updated: 最后更新于
+references: 参考文献
+related_posts:
+  description: "您可能还想阅读以下文章："
+  title: 喜欢这篇文章吗？
+search:
+  dark_theme:
+    description: 将网站主题更改为深色
+    title: 深色主题
+  dropdown: 下拉按钮
+  email: 发送邮件
+  footer:
+    close: 关闭
+    navigate: 跳转至导航栏
+    parent: 返回上一级
+    select: 跳转至选择栏
+  languages: 语言
+  light_theme:
+    description: 将网站主题更改为浅色
+    title: 浅色主题
+  navigation: 导航菜单
+  news: 新闻
+  placeholder: 输入以开始搜索
+  posts: 帖子
+  projects: 项目
+  socials: 社交账号
+  system_theme:
+    description: 将网站主题更改为系统默认
+    title: 系统默认
+  theme: 主题
+selected_publications: 精选出版物
+site_description: 一款适合学术界的简单空白主题。基于 [*folio](https://github.com/bogoli/-folio) 设计。

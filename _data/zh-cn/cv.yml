@@ -1,0 +1,86 @@
+- title: 基本信息
+  type: map
+  contents:
+    - name: 姓名
+      value: 刘泽超
+    - name: 生日
+      value: 1996
+    - name: 语言
+      value: 中文、英语
+
+- title: 教育
+  type: time_table
+  contents:
+    - title: 工学硕士
+      institution: 西北工业大学，西安。
+      year: 2018.09-2021.03
+      description:
+        - 学院：自动化学院
+        - 专业：控制科学与工程-模式识别与智能系统
+        - 说明：985院校，推免生
+    - title: 工学学士
+      institution: 长安大学，西安。
+      year: 2014.09-2018.06
+      description:
+        - 学院：电子与控制工程学院
+        - 专业：自动化
+        - 说明：211院校
+
+- title: 工作经历
+  type: time_table
+  contents:
+    - title: 图像处理工程师
+      institution: 之江实验室，新型计算传感与处理研究中心
+      year: 2024.02 - 今
+      description:
+        - 工作内容：导航地图构建。
+    - title: 数据算法工程师
+      institution: 之江实验室，光纤传感研究中心
+      year: 2021.04 - 2024.01
+      description:
+        - 工作内容：光纤传感数据（一维或二维时序数据）去噪、融合等。
+    
+
+- title: 技能
+  type: nested_list
+  contents:
+    - title: 机器学习
+      items:
+        - title: 理论
+          items:
+            - 熟悉可实现分类、聚类任务的传统机器学习方法；
+            - 熟练掌握卷积神经网络（CNN）、变分自编码（VAE）、生成对抗网络等相关知识；
+            - 熟悉Transformer相关知识。
+        - title: 编程实现
+          items:
+            - Python3：熟练使用（2017.04起开始使用至今）；
+            - Matlab：熟练使用（2015.10起使用至今）;
+            - C：曾经可熟练使用（逐页阅读完《C Primer》；计算机二级C语言成绩为“优秀”；2017年参与了“全国大学生电子设计竞赛”、“全国大学生智能车竟赛”等，我均负责使用`C`语言编写单片机程序）；
+            - C++： 曾经可熟练使用（上学期间学习的主要是visual C++/ MFC，2017年参与了“大学生创新创业项目”，我负责使用`C++`语言编写上位机软件）。
+    - title: 其他：
+      items:
+        - Latex：熟练使用；
+        - Office（Word，Excel，PowerPoint）：熟练使用；
+        - Photoshop：简单操作。 
+
+- title: 荣誉奖项
+  type: time_table
+  contents:
+    - year: 2020
+      items:
+        - 西北工业大学研究生二等奖学金（Top 20%）
+    - year: 2019
+      items:
+        - 西北工业大学研究生一等奖学金（Top 10%）
+    - year: 2018
+      items:
+        - 2018届长安大学优秀毕业生代表（电控学院） （3/370）
+    - year: 2017
+      items:
+        - 2017全国大学生电子设计竞赛陕西赛区一等奖  
+        - 2017年电赛陕西工科五校校际联赛二等奖
+        - 2017长安大学“挑战杯”课外学术科技作品竞赛一等奖
+    - year: 2017
+      items:
+        - 国家励志奖学金（Top 9%）
+

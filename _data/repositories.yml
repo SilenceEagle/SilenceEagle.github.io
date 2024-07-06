@@ -1,0 +1,9 @@
+github_users:
+  - SilenceEagle
+
+repo_description_lines_max: 2
+
+github_repos:
+  - SilenceEagle/paper_downloader
+  - SilenceEagle/leetcode
+  - SilenceEagle/custom_MATLAB_SNR
