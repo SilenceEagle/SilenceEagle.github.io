@@ -9,7 +9,7 @@ categories:
 citation:
   bibtex: "或者采用BibTex引用格式："
   introduction: "如果您认为此信息有用，请添加引用："
-contact_note: 你甚至可以添加一条小注释，说明哪种方式是联系您的最佳方式。
+contact_note: 
 cv:
   address: 地址
   area: 地区
