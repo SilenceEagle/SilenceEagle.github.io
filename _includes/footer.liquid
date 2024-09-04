@@ -1,3 +1,5 @@
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
@@ -11,6 +13,7 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
+      总访问量：<span id="busuanzi_value_site_uv"></span>
     </div>
   </footer>
 {% else %}
@@ -30,6 +33,7 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
+      总访问量：<span id="busuanzi_value_site_uv"></span>
     </div>
   </footer>
 {% endif %}
