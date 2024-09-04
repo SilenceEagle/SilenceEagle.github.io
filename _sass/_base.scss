@@ -436,6 +436,17 @@ footer.fixed-bottom {
     padding-top: 9px;
     padding-bottom: 8px;
     text-align: center;
+
+    // workaround for web visitor count number's color in footbar
+    #busuanzi_value_site_uv {
+      color: var(--global-footer-text-color) !important;
+    }
+    #busuanzi_value_site_pv {
+      color: var(--global-footer-text-color) !important;
+    }
+    #busuanzi_container_page_pv {
+      color: var(--global-footer-text-color) !important;
+    }
   }
 
   a {
@@ -456,6 +467,17 @@ footer.sticky-bottom {
 
   .container {
     text-align: center;
+
+    // workaround for web visitor count number's color in footbar
+    #busuanzi_value_site_uv {
+      color: var(--global-footer-text-color) !important;
+    }
+    #busuanzi_value_site_pv {
+      color: var(--global-footer-text-color) !important;
+    }
+    #busuanzi_container_page_pv {
+      color: var(--global-footer-text-color) !important;
+    }
   }
 }
 
@@ -1325,3 +1347,7 @@ ninja-keys::part(ninja-input-wrapper) {
     border-bottom-color: var(--global-divider-color);
   }
 }
+
+
+
+
