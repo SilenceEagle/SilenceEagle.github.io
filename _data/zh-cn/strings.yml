@@ -64,6 +64,7 @@ cv:
 footer_text: > # the ">" symbol means to ignore newlines until "titles:"
   改编自基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 的 <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>主题.
   部署于<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  <span id="busuanzi_container_site_uv" style='display:none'><a href="https://busuanzi.ibruce.info">总访问量：</a><span id="busuanzi_value_site_uv"></span>
 latest_posts: 最新文章
 months:
   long:
