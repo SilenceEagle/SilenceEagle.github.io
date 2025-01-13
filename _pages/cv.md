@@ -35,25 +35,30 @@ redirect_from:
 
   * **Python3**：熟练使用（`2017.04`起开始使用至今）；
   * **Matlab**：熟练使用（`2015.10`起使用至今）
-  * **C**：曾经可熟练使用（逐页阅读完《C Primer》；计算机二级C语言成绩为“优秀”；2017年参与了“全国大学生电子设计竞赛”、“全国大学生智能车竟赛”等，我均负责使用`C`语言编写单片机程序）；
-  * **C++**： 曾经可熟练使用（上学期间学习的主要是`visual C++` / `MFC`，2017年参与了“大学生创新创业项目”，我负责使用`C++`语言编写上位机软件）。
+  * **C**：曾经可熟练使用（逐页阅读完《C Primer》；计算机二级C语言成绩为“优秀”；2017年参与了“全国大学生电子设计竞赛”、“全国大学生智能车竟赛”等，我均负责使用 `C`语言编写单片机程序）；
+  * **C++**： 曾经可熟练使用（上学期间学习的主要是 `visual C++` / `MFC`，2017年参与了“大学生创新创业项目”，我负责使用 `C++`语言编写上位机软件）。
 * 其他：
+
   * **Latex**：熟练使用；
   * **Office（Word，Excel，PowerPoint）**：熟练使用；
-  * **Photoshop**：简单操作。 
-
+  * **Photoshop**：简单操作。
+  * **Premiere Pro**: 简单操作。
 
 论文
-============
+====
+
 <!-- {% assign count = 0 %} -->
+
 <ol>{% for post in site.publications reversed %}
     <!-- {% capture count %}{{ count | plus:1 }}{% endcapture %} -->
     {% include archive-single-cv.html %}
   {% endfor %}</ol>
 
 专利
-============
+====
+
 <!-- {% assign count = 0 %} -->
+
 <ol>{% for post in site.patents reversed %}
     <!-- {% capture count %}{{ count | plus:1 }}{% endcapture %} -->
     {% include archive-single-cv.html %}
