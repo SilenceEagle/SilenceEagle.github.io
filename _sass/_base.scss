@@ -1351,3 +1351,19 @@ ninja-keys::part(ninja-input-wrapper) {
 
 
 
+
+.github-local-card {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  overflow-wrap: anywhere;
+
+  .github-card-title { font-weight: 600; }
+  p { margin: 0.75rem 0; }
+  .github-card-stats { display: flex; flex-wrap: wrap; gap: 1rem; }
+  small { display: block; margin-top: 0.5rem; }
+  small:empty { display: none; }
+}
