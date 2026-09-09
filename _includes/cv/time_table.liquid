@@ -65,12 +65,12 @@
                     <ul class="subitems">
                       {% for subitem in item.contents %}
                         <li>
-                          <span class="subitem">{{ subitem }}</span>
+                          <div class="subitem cv-markdown">{{ subitem | markdownify }}</div>
                         </li>
                       {% endfor %}
                     </ul>
                   {% else %}
-                    <span class="item">{{ item }}</span>
+                    <div class="item cv-markdown">{{ item | markdownify }}</div>
                   {% endif %}
                 </li>
               {% endfor %}
@@ -85,12 +85,12 @@
                     <ul class="subitems">
                       {% for subitem in item.contents %}
                         <li>
-                          <span class="subitem">{{ subitem }}</span>
+                          <div class="subitem cv-markdown">{{ subitem | markdownify }}</div>
                         </li>
                       {% endfor %}
                     </ul>
                   {% else %}
-                    <span class="item">{{ item }}</span>
+                    <div class="item cv-markdown">{{ item | markdownify }}</div>
                   {% endif %}
                 </li>
               {% endfor %}

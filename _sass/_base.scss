@@ -483,6 +483,39 @@ footer.sticky-bottom {
 
 // CV
 
+.cv .cv-map-inline {
+  margin-bottom: 0;
+
+  tbody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  tr {
+    display: flex;
+    align-items: baseline;
+  }
+
+  td {
+    white-space: nowrap;
+  }
+
+  td:first-child b::after {
+    content: "：";
+  }
+}
+
+.cv .cv-markdown {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 .cv {
   margin-bottom: 40px;
 

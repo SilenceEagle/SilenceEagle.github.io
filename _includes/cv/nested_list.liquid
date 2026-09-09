@@ -10,13 +10,13 @@
               <ul class="subsubitems">
                 {% for subsubitem in subitem.items %}
                   <li>
-                    <span class="subsubitem">{{ subsubitem }}</span>
+                    <div class="subsubitem cv-markdown">{{ subsubitem | markdownify }}</div>
                   </li>
                 {% endfor %}
               </ul>
             {% else %}
               <li>
-                <span class="subitem">{{ subitem }}</span>
+                <div class="subitem cv-markdown">{{ subitem | markdownify }}</div>
               </li>
             {% endif %}
           {% endfor %}
