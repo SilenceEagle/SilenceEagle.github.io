@@ -232,7 +232,6 @@ exclude:
   - _pages/en-us/teaching.md
   - _pages/zh-cn/teaching.md
   - _pages/en-us/blog.md
-  - _pages/zh-cn/blog.md
   - _pages/en-us/projects.md
   - _pages/zh-cn/projects.md
   - _pages/en-us/profiles.md
@@ -274,6 +273,15 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  # Identify page translations even when only one language is enabled.
+  - scope:
+      path: "_pages/en-us/"
+    values:
+      lang: "en-us"
+  - scope:
+      path: "_pages/zh-cn/"
+    values:
+      lang: "zh-cn"
 
 sass:
   sourcemap: never
@@ -303,8 +311,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # tags to highlight on the blog index
+display_categories: [] # categories to highlight on the blog index
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -494,7 +502,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Noto+Sans+SC:300,400,500,600,700|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

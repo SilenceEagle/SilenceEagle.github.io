@@ -2,9 +2,8 @@
 page_id: blog
 layout: default
 permalink: /blog/
-title: blog
-blog_name: al-folio em português brasileiro
-description: um tema simples para acadêmicos
+title: 博客
+blog_name: 想到啥就写啥
 nav: true
 nav_order: 1
 pagination:
@@ -28,11 +27,13 @@ pagination:
 
   <div class="header-bar">
     <h1>{{ page.blog_name }}</h1>
-    <h2>{{ page.description }}</h2>
+    {% if blog_description_size > 0 %}
+      <h2>{{ page.description }}</h2>
+    {% endif %}
   </div>
   {% endif %}
 
-{% if site.display_tags or site.display_categories %}
+{% if site.display_tags.size > 0 or site.display_categories.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
@@ -80,14 +81,14 @@ pagination:
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
-                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+                      {% assign read_time = post.content | strip_html | number_of_words: 'auto' | divided_by: 180 | plus: 1 %}
                     {% else %}
-                      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+                      {% assign read_time = post.feed_content | strip_html | number_of_words: 'auto' | divided_by: 180 | plus: 1 %}
                     {% endif %}
                     {% assign year = post.date | date: "%Y" %}
 
                     <p class="post-meta">
-                      Leitura de {{ read_time }} min &nbsp; &middot; &nbsp;
+                      阅读约 {{ read_time }} 分钟 &nbsp; &middot; &nbsp;
                       <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
                         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                     </p>
@@ -115,9 +116,9 @@ pagination:
     {% for post in postlist %}
 
     {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+      {% assign read_time = post.content | strip_html | number_of_words: 'auto' | divided_by: 180 | plus: 1 %}
     {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
+      {% assign read_time = post.feed_content | strip_html | number_of_words: 'auto' | divided_by: 180 | plus: 1 %}
     {% endif %}
     {% assign year = post.date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
@@ -144,7 +145,7 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        Leitura de {{ read_time }} min &nbsp; &middot; &nbsp;
+        阅读约 {{ read_time }} 分钟 &nbsp; &middot; &nbsp;
         {% include date_format.liquid format="long" date=post.date %}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
@@ -181,7 +182,8 @@ pagination:
 </div>
 {% endif %}
     </li>
-
+    {% else %}
+      <li>暂无文章。</li>
     {% endfor %}
 
   </ul>

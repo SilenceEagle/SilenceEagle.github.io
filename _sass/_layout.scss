@@ -17,6 +17,10 @@ body {
   }
 }
 
+html:lang(zh) body {
+  font-family: "Roboto", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+}
+
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
   padding-top: 56px;

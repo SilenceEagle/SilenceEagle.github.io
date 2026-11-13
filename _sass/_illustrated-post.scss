@@ -1,0 +1,104 @@
+// Layout and optional content styles for illustrated blog posts.
+@media (min-width: 992px) {
+    .illustrated-post-container.container {
+        max-width: clamp(62.5rem, 80vw, 94rem);
+
+        // Give the article the remaining width after the table of contents.
+        > .row > .col-sm-3 {
+            flex: 0 0 clamp(9rem, 11vw, 13rem);
+            max-width: none;
+        }
+
+        > .row > .col-sm-9 {
+            flex: 1 1 0;
+            min-width: 0;
+            max-width: none;
+        }
+    }
+}
+
+.post:has(.illustrated-post) > .post-header,
+.illustrated-post {
+    max-width: 76rem;
+    margin-inline: auto;
+}
+
+.illustrated-post {
+    container-type: inline-size;
+    line-height: 1.8;
+
+    section {
+        padding-block: 1.5rem;
+        border-top: 1px solid var(--global-divider-color);
+    }
+
+    h2 {
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .post-card-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        padding: 0;
+        list-style: none;
+
+        > li {
+            padding: 0.85rem 1rem;
+            border: 1px solid var(--global-divider-color);
+            border-radius: 0.5rem;
+            background: var(--global-card-bg-color);
+            font-weight: 500;
+        }
+
+        @container (max-width: 30rem) {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    figure {
+        margin: 1rem 0 0;
+        overflow: hidden;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 0.6rem;
+        background: var(--global-card-bg-color);
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .post-figure-grid {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 1rem;
+
+        > figure {
+            margin: 0;
+        }
+
+        // Keep captions readable when the table of contents narrows the article.
+        @container (min-width: 44rem) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    figcaption {
+        margin: 0;
+        padding: 0.65rem 1rem;
+        color: var(--global-text-color);
+    }
+
+    .post-link-list {
+        margin: 0;
+        padding-inline-start: 1.3rem;
+
+        > li + li {
+            margin-top: 0.4rem;
+        }
+    }
+}
