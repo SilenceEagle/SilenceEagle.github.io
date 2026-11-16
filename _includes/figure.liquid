@@ -1,4 +1,18 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
+{%- assign responsive_image = false -%}
+{%- assign image_extension = include.path | split: '.' | last | downcase | prepend: '.' -%}
+{%- if site.imagemagick.enabled and site.imagemagick.input_formats contains image_extension -%}
+  {%- assign image_url = include.path | relative_url -%}
+  {%- for directory in site.imagemagick.input_directories -%}
+    {%- assign directory_url = directory | relative_url -%}
+    {%- assign directory_length = directory_url | size -%}
+    {%- assign image_prefix = image_url | slice: 0, directory_length -%}
+    {%- if image_prefix == directory_url -%}
+      {%- assign responsive_image = true -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
 
 <figure
   {% if include.slot %}
@@ -11,7 +25,7 @@
       See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
-    {% if site.imagemagick.enabled %}
+    {% if responsive_image %}
       <source
         class="responsive-img-srcset"
         srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
@@ -68,7 +82,9 @@
       {% elsif site.lazy_loading_images %}
         loading="lazy"
       {% endif %}
-      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      {% if responsive_image %}
+        onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      {% endif %}
     >
   </picture>
 

@@ -26,7 +26,7 @@
     {% include header.liquid %}
 
     <!-- Content -->
-    <div class="container mt-5{% if page.layout == 'illustrated-post' %} illustrated-post-container{% endif %}" role="main">
+    <div class="container mt-5{% if page.layout == 'illustrated-post' %} illustrated-post-container{% elsif page.layout == 'project-doc' and page.toc.sidebar %} project-doc-container{% endif %}" role="main">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">

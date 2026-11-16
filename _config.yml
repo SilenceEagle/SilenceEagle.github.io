@@ -176,14 +176,14 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
-    defaults:
-      layout: post
-    output: false
-    permalink: /:collection/:title/
-  projects:
-    output: false
-    permalink: /:collection/:title/
+    news:
+        defaults:
+            layout: post
+        output: false
+        permalink: /:collection/:title/
+    projects:
+        output: true
+        permalink: /:collection/:title/
 
 announcements:
   enabled: false
@@ -233,7 +233,6 @@ exclude:
   - _pages/zh-cn/teaching.md
   - _pages/en-us/blog.md
   - _pages/en-us/projects.md
-  - _pages/zh-cn/projects.md
   - _pages/en-us/profiles.md
   - _pages/zh-cn/profiles.md
   - _pages/en-us/dropdown.md

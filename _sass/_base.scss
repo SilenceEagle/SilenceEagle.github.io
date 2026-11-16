@@ -679,6 +679,29 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+
+    .card-img-top {
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    > figure {
+      margin: 0;
+    }
+
+    > .card-body {
+      padding: 1rem 1.125rem;
+
+      .card-title {
+        margin-bottom: 0.5rem;
+      }
+
+      .card-text {
+        margin-bottom: 0.25rem;
+      }
+    }
   }
 
   .col {
@@ -692,7 +715,7 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;

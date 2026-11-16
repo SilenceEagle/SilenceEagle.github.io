@@ -1,0 +1,205 @@
+.project-doc-container {
+    // Show deployment subsections before their parent heading becomes active.
+    #toc-sidebar .nav-link + ul {
+        display: block;
+    }
+
+    @media (min-width: 992px) {
+        &.container {
+            max-width: clamp($max-content-width, 80vw, 94rem);
+        }
+
+        // Reserve a readable sidebar and give the remaining width to the document.
+        > .row > .col-sm-3 {
+            flex: 0 0 15rem;
+            max-width: none;
+        }
+
+        > .row > .col-sm-9 {
+            flex: 1 1 0;
+            min-width: 0;
+            max-width: none;
+        }
+
+        .post:has(> article > .project-doc) {
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        > .row > .col-sm-3,
+        > .row > .col-sm-9 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        > .row > .col-sm-3 {
+            order: -1;
+        }
+
+        #toc-sidebar:not(:empty) {
+            position: static;
+            visibility: visible;
+            height: auto;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 0;
+            border: 1px solid var(--global-divider-color);
+            border-radius: 0.6rem;
+        }
+    }
+}
+
+// Keep the title and body aligned within the project documentation column.
+.post:has(> article > .project-doc) {
+    max-width: 52rem;
+    margin-inline: auto;
+}
+
+.project-doc {
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+
+    h2,
+    h3,
+    h4 {
+        font-weight: 600;
+    }
+
+    h2 {
+        margin: 2.25rem 0 0.85rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--global-divider-color);
+        font-size: 1.5rem;
+    }
+
+    > h2:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    h3 {
+        margin: 1.6rem 0 0.65rem;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        margin: 1.25rem 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    li + li {
+        margin-top: 0.35rem;
+    }
+
+    .project-doc-table {
+        width: 100%;
+        margin: 1rem 0;
+        color: var(--global-text-color);
+
+        th,
+        td {
+            padding: 0.65rem 0.8rem;
+            vertical-align: top;
+            border-bottom: 1px solid var(--global-divider-color);
+        }
+
+        th {
+            background: var(--global-card-bg-color);
+        }
+
+        td:first-child {
+            width: 23%;
+            font-weight: 600;
+            overflow-wrap: normal;
+        }
+    }
+
+    details {
+        margin: 1rem 0;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 0.6rem;
+        background: var(--global-card-bg-color);
+
+        > summary {
+            padding: 0.65rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &::marker {
+                color: var(--global-theme-color);
+            }
+        }
+
+        > :not(summary) {
+            margin: 0 1rem 1rem;
+        }
+    }
+
+    pre {
+        padding: 0.85rem 1rem;
+        overflow-x: auto;
+    }
+
+    .project-doc-demo {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        align-items: start;
+        gap: 1rem;
+        margin-block: 1rem 1.5rem;
+
+        > figure {
+            margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+        }
+    }
+
+    .project-doc-video {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: min(100%, 20rem);
+        max-height: 75vh;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 0.6rem;
+    }
+
+    .project-doc-image,
+    .project-doc-gallery img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project-doc-image,
+    .project-doc-gallery > figure {
+        border: 1px solid var(--global-divider-color);
+        border-radius: 0.6rem;
+    }
+
+    .project-doc-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(0.5rem, 2vw, 1rem);
+        max-width: 42rem;
+        margin: 1rem auto 0;
+
+        > figure {
+            margin: 0;
+            background: var(--global-card-bg-color);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 0.55rem 0.55rem 0 0;
+        }
+
+        figcaption {
+            padding: 0.5rem 0.7rem;
+            font-size: 0.875rem;
+        }
+    }
+}
