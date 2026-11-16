@@ -318,6 +318,37 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar {
+    // Let the site title yield space before the navigation labels do.
+    .navbar-brand.title {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .navbar-collapse {
+      flex: 0 0 auto;
+      margin-left: auto;
+    }
+
+    .navbar-nav .nav-link {
+      padding-inline: 0.375rem;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  body.fixed-top-nav {
+    // Keep the open menu in flow so the homepage remains readable underneath it.
+    padding-top: 0;
+
+    #navbar.fixed-top {
+      position: static;
+    }
+  }
+}
+
 .navbar-toggler {
   .icon-bar {
     display: block;

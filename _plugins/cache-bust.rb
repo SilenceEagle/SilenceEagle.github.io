@@ -43,7 +43,8 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      # The stylesheet is generated from Sass and Jekyll settings during the build.
+      "#{file_name}?v=#{@context.registers[:site].time.to_i}"
     end
   end
 end
